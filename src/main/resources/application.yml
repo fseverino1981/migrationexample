@@ -1,0 +1,17 @@
+spring:
+    application.name:
+        migrationexample
+
+#h2 config
+    datasource:
+        url: jdbc:h2:mem:flasevedb
+        driverClassName: org.h2.Driver
+        username: admin
+        password: admin
+    jpa:
+        database-platform:
+            org.hibernate.dialect.H2Dialect
+flyway:
+    user: admin
+    password: admin
+    schemas: flasevedb
